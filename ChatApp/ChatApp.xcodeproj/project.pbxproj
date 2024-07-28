@@ -20,6 +20,13 @@
 		C38AF7A52C5136E000358FB7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7A42C5136E000358FB7 /* MessageView.swift */; };
 		C38AF7A82C51383800358FB7 /* MessageLoadUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7A72C51383800358FB7 /* MessageLoadUsecase.swift */; };
 		C38AF7AA2C5138F400358FB7 /* MessageHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7A92C5138F400358FB7 /* MessageHomeView.swift */; };
+		C38AF7AD2C51C93900358FB7 /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7AC2C51C93900358FB7 /* ChatListModel.swift */; };
+		C38AF7AF2C51C9A500358FB7 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7AE2C51C9A500358FB7 /* ChatCell.swift */; };
+		C38AF7B22C5605B300358FB7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7B12C5605B300358FB7 /* ImageLoader.swift */; };
+		C38AF7B42C5605D800358FB7 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7B32C5605D800358FB7 /* URLImageView.swift */; };
+		C38AF7B62C56075E00358FB7 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7B52C56075E00358FB7 /* ChatListView.swift */; };
+		C38AF7C22C560A0B00358FB7 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7C12C560A0B00358FB7 /* ChatListViewModel.swift */; };
+		C38AF7C42C560A2600358FB7 /* ChatListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AF7C32C560A2600358FB7 /* ChatListDomain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,13 @@
 		C38AF7A42C5136E000358FB7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C38AF7A72C51383800358FB7 /* MessageLoadUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLoadUsecase.swift; sourceTree = "<group>"; };
 		C38AF7A92C5138F400358FB7 /* MessageHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHomeView.swift; sourceTree = "<group>"; };
+		C38AF7AC2C51C93900358FB7 /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
+		C38AF7AE2C51C9A500358FB7 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		C38AF7B12C5605B300358FB7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C38AF7B32C5605D800358FB7 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		C38AF7B52C56075E00358FB7 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		C38AF7C12C560A0B00358FB7 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		C38AF7C32C560A2600358FB7 /* ChatListDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListDomain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +120,10 @@
 		C38AF76C2C51319800358FB7 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				C38AF7AB2C514BC900358FB7 /* Scene */,
+				C38AF7BD2C5609C300358FB7 /* Shared */,
+				C38AF7B82C56097F00358FB7 /* Domain */,
+				C38AF7B72C56097600358FB7 /* Feature */,
+				C38AF7B02C5605A600358FB7 /* Util */,
 				C38AF7A62C5137ED00358FB7 /* Usecase */,
 				C38AF79F2C51324900358FB7 /* View */,
 				C38AF79C2C51322C00358FB7 /* Model */,
@@ -148,11 +165,103 @@
 			isa = PBXGroup;
 			children = (
 				C38AF79D2C51323500358FB7 /* Message.swift */,
+				C38AF7AC2C51C93900358FB7 /* ChatListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
 		C38AF79F2C51324900358FB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C38AF7A62C5137ED00358FB7 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		C38AF7B02C5605A600358FB7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7B12C5605B300358FB7 /* ImageLoader.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C38AF7B72C56097600358FB7 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7BB2C5609AA00358FB7 /* Home */,
+				C38AF7BA2C5609A000358FB7 /* List */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C38AF7B82C56097F00358FB7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7C02C5609ED00358FB7 /* Home */,
+				C38AF7B92C56098A00358FB7 /* List */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C38AF7B92C56098A00358FB7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7C32C560A2600358FB7 /* ChatListDomain.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C38AF7BA2C5609A000358FB7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7BC2C5609BD00358FB7 /* View */,
+				C38AF7B52C56075E00358FB7 /* ChatListView.swift */,
+				C38AF7C12C560A0B00358FB7 /* ChatListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C38AF7BB2C5609AA00358FB7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7BF2C5609D300358FB7 /* View */,
+				C38AF7A92C5138F400358FB7 /* MessageHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C38AF7BC2C5609BD00358FB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7AE2C51C9A500358FB7 /* ChatCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C38AF7BD2C5609C300358FB7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7BE2C5609C700358FB7 /* UI */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C38AF7BE2C5609C700358FB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C38AF7B32C5605D800358FB7 /* URLImageView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C38AF7BF2C5609D300358FB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C38AF7A22C51327A00358FB7 /* MessageCell.swift */,
@@ -161,20 +270,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C38AF7A62C5137ED00358FB7 /* Usecase */ = {
+		C38AF7C02C5609ED00358FB7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				C38AF7A72C51383800358FB7 /* MessageLoadUsecase.swift */,
 			);
-			path = Usecase;
-			sourceTree = "<group>";
-		};
-		C38AF7AB2C514BC900358FB7 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				C38AF7A92C5138F400358FB7 /* MessageHomeView.swift */,
-			);
-			path = Scene;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +410,19 @@
 			files = (
 				C38AF7772C51319A00358FB7 /* Persistence.swift in Sources */,
 				C38AF7A82C51383800358FB7 /* MessageLoadUsecase.swift in Sources */,
+				C38AF7B42C5605D800358FB7 /* URLImageView.swift in Sources */,
 				C38AF77A2C51319A00358FB7 /* ChatApp.xcdatamodeld in Sources */,
+				C38AF7C22C560A0B00358FB7 /* ChatListViewModel.swift in Sources */,
+				C38AF7AF2C51C9A500358FB7 /* ChatCell.swift in Sources */,
+				C38AF7AD2C51C93900358FB7 /* ChatListModel.swift in Sources */,
+				C38AF7B22C5605B300358FB7 /* ImageLoader.swift in Sources */,
 				C38AF79E2C51323500358FB7 /* Message.swift in Sources */,
+				C38AF7C42C560A2600358FB7 /* ChatListDomain.swift in Sources */,
 				C38AF76E2C51319800358FB7 /* ChatApp.swift in Sources */,
 				C38AF7AA2C5138F400358FB7 /* MessageHomeView.swift in Sources */,
 				C38AF7A52C5136E000358FB7 /* MessageView.swift in Sources */,
 				C38AF7A32C51327A00358FB7 /* MessageCell.swift in Sources */,
+				C38AF7B62C56075E00358FB7 /* ChatListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

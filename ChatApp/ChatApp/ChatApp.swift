@@ -13,7 +13,7 @@ struct ChatApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MessageHomeView()
+            ChatListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .background(Color.white)
         }
